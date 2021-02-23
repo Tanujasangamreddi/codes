@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <script>
+        document.addEventListener("DOMContentLoaded",function(){
+            document.getElementById("check").addEventListener("click", function(){
+                if (document.getElementById("check").checked){
+                document.getElementById("btn").disabled=false;
+            }
+            else{
+                document.getElementById("btn").disabled=true;            }
+            });
+        });     
+    </script>
+    <style>
+        #btn{
+            width:100px;
+            height:50px;
+            text-align: center;
+    
+            }
+    </style> 
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <label for="check">Check Box</label>
+    <hr>
+    <br>   
+      <button id="btn" disabled>Click</button> 
+</body>
+</html>
