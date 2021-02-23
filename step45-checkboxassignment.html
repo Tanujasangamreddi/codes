@@ -9,10 +9,10 @@
         document.addEventListener("DOMContentLoaded",function(){
             document.getElementById("check").addEventListener("click", function(){
                 if (document.getElementById("check").checked){
-                document.getElementById("btn").disabled=false;
+                document.getElementById("btn").removeAttribute("disabled");
             }
             else{
-                document.getElementById("btn").disabled=true;            }
+                document.getElementById("btn").setAttribute("disabled",false);            }
             });
         });     
     </script>
